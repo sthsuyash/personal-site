@@ -1,0 +1,169 @@
+.dev {
+  color: #b1d0e0;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: #40514e;
+}
+
+h1 {
+  margin: 50px auto 0;
+  font-family: "Sacramento", cursive;
+  font-size: 5.6rem; /* 16px = 1em = 100% */
+  color: #88e0ef;
+  line-height: 2;
+}
+
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem;
+  color: #6fc9d4;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  margin-top: 0;
+  font-family: "Ubuntu", sans-serif;
+  color: #2f86a6;
+  font-size: x-large;
+}
+
+p {
+  line-height: 2;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 100px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  top: 500px;
+  left: 250px;
+}
+
+.top-container {
+  background-color: #406882;
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle-container {
+  margin: 6rem 0;
+}
+
+.intro {
+  width: 40%;
+  margin: auto;
+}
+
+.profile-img {
+  height: 200px;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto;
+  text-align: justify;
+}
+
+.frontend {
+  float: left;
+  width: 32%;
+  margin-right: 10px;
+}
+
+.c-language {
+  border-radius: 50%;
+  float: right;
+  width: 25%;
+  margin-left: 40px;
+  margin-top: 1rem;
+}
+
+.python {
+  border-radius: 50%;
+  float: left;
+  width: 25%;
+  margin-bottom: 10px;
+}
+
+.bottom-container {
+  margin-top: 50px;
+  background-color: rgb(207, 224, 240);
+  padding: 2rem 0;
+}
+
+.sites > a {
+  margin: 0 2px;
+}
+
+.contact-me > p {
+  width: 50%;
+  margin: 2rem auto 3rem;
+}
+
+.contact-me > h3 {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+hr {
+  border-style: none;
+  width: 5%;
+  border: dotted #b5dae0;
+  border-bottom: none;
+  border-width: 0.5rem;
+  margin: 5rem auto;
+}
+
+.bottom-hr {
+  position: relative;
+  margin-top: 17rem;
+}
+
+#footer-text {
+  font-size: small;
+  font-weight: 600;
+  padding: 20px 0 0;
+}
+
+#footer-text > a {
+  color: #566966;
+}
+
+.mail {
+  background: #3edbf0;
+  background-image: -webkit-linear-gradient(top, #009dae, #96baff);
+  background-image: -moz-linear-gradient(top, #009dae, #96baff);
+  background-image: -ms-linear-gradient(top, #009dae, #96baff);
+  background-image: -o-linear-gradient(top, #009dae, #96baff);
+  background-image: linear-gradient(to bottom, #009dae, #96baff);
+  -webkit-border-radius: 13;
+  -moz-border-radius: 13;
+  border-radius: 13px;
+  color: #ebdbdb;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.mail:hover {
+  background: #31b7c9;
+  background-image: -webkit-linear-gradient(top, #3edbf0, #a6f6f1);
+  background-image: -moz-linear-gradient(top, #3edbf0, #a6f6f1);
+  background-image: -ms-linear-gradient(top, #3edbf0, #a6f6f1);
+  background-image: -o-linear-gradient(top, #3edbf0, #a6f6f1);
+  background-image: linear-gradient(to bottom, #3edbf0, #a6f6f1);
+  text-decoration: underline;
+  font-family: "Ubuntu", sans-serif;
+  color: #40514e;
+}
