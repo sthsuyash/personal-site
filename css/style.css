@@ -1,3 +1,24 @@
+/* root varibles */
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --h1-color: #88e0ef;
+  --h2-color: #68aabe;
+  --h3-color: #2f86a6;
+  --body-color: #455754;
+  --header-color: #406882;
+  --footer-color: #cfe0f0;
+  --hr-color: #b5dae0;
+  --footer-link: #566966;
+  --mail-bg: #3edbf0;
+  --mail-gradient-front: #009dae;
+  --mail-gradient-back: #96baff;
+  --mail-hover-gradient-front: #3edbf0;
+  --mail-hover-gradient-back: #a6f6f1;
+}
+
 .dev {
   color: #b1d0e0;
 }
@@ -5,36 +26,42 @@
 body {
   margin: 0;
   text-align: center;
-  font-family: "Comfortaa", cursive;
+  font-family: 'Comfortaa', cursive;
   font-size: 1.2rem;
   font-weight: bolder;
-  color: #40514e;
+  color: var(--body-color);
 }
 
 h1 {
   margin: 50px auto 0;
-  font-family: "Sacramento", cursive;
+  font-family: 'Sacramento', cursive;
   font-size: 5.6rem; /* 16px = 1em = 100% */
-  color: #88e0ef;
+  color: var(--h1-color);
   line-height: 2;
 }
 
 h2 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 2.5rem;
-  color: #6fc9d4;
+  color: var(--h2-color);
   padding-bottom: 1rem;
 }
 
 h3 {
   margin-top: 0;
-  font-family: "Ubuntu", sans-serif;
-  color: #2f86a6;
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--h3-color);
   font-size: x-large;
 }
 
 p {
   line-height: 2;
+}
+
+header {
+  background-color: var(--header-color);
+  position: relative;
+  padding-top: 100px;
 }
 
 .top-cloud {
@@ -49,18 +76,12 @@ p {
   left: 250px;
 }
 
-.top-container {
-  background-color: #406882;
-  position: relative;
-  padding-top: 100px;
-}
-
-.middle-container {
+main {
   margin: 6rem 0;
 }
 
 .intro {
-  width: 40%;
+  width: 50%;
   margin: auto;
 }
 
@@ -80,24 +101,17 @@ p {
   margin-right: 10px;
 }
 
-.c-language {
-  border-radius: 50%;
+.coding {
   float: right;
+  border-radius: 50%;
   width: 25%;
   margin-left: 40px;
   margin-top: 1rem;
 }
 
-.python {
-  border-radius: 50%;
-  float: left;
-  width: 25%;
-  margin-bottom: 10px;
-}
-
-.bottom-container {
+footer {
   margin-top: 50px;
-  background-color: rgb(207, 224, 240);
+  background-color: var(--footer-color);
   padding: 2rem 0;
 }
 
@@ -118,15 +132,15 @@ p {
 hr {
   border-style: none;
   width: 5%;
-  border: dotted #b5dae0;
+  border: dotted var(--hr-color);
   border-bottom: none;
   border-width: 0.5rem;
-  margin: 5rem auto;
+  margin: 4.5rem auto;
 }
 
 .bottom-hr {
   position: relative;
-  margin-top: 17rem;
+  margin-top: 11rem;
 }
 
 #footer-text {
@@ -136,21 +150,41 @@ hr {
 }
 
 #footer-text > a {
-  color: #566966;
+  color: var(--footer-link);
 }
 
 .mail {
-  background: #3edbf0;
-  background-image: -webkit-linear-gradient(top, #009dae, #96baff);
-  background-image: -moz-linear-gradient(top, #009dae, #96baff);
-  background-image: -ms-linear-gradient(top, #009dae, #96baff);
-  background-image: -o-linear-gradient(top, #009dae, #96baff);
-  background-image: linear-gradient(to bottom, #009dae, #96baff);
+  background: var(--mail-bg);
+  background-image: -webkit-linear-gradient(
+    top,
+    var(--mail-gradient-front),
+    var(--mail-gradient-back)
+  );
+  background-image: -moz-linear-gradient(
+    top,
+    var(--mail-gradient-front),
+    var(--mail-gradient-back)
+  );
+  background-image: -ms-linear-gradient(
+    top,
+    var(--mail-gradient-front),
+    var(--mail-gradient-back)
+  );
+  background-image: -o-linear-gradient(
+    top,
+    var(--mail-gradient-front),
+    var(--mail-gradient-back)
+  );
+  background-image: linear-gradient(
+    to bottom,
+    var(--mail-gradient-front),
+    var(--mail-gradient-back)
+  );
   -webkit-border-radius: 13;
   -moz-border-radius: 13;
   border-radius: 13px;
   color: #ebdbdb;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
@@ -158,12 +192,32 @@ hr {
 
 .mail:hover {
   background: #31b7c9;
-  background-image: -webkit-linear-gradient(top, #3edbf0, #a6f6f1);
-  background-image: -moz-linear-gradient(top, #3edbf0, #a6f6f1);
-  background-image: -ms-linear-gradient(top, #3edbf0, #a6f6f1);
-  background-image: -o-linear-gradient(top, #3edbf0, #a6f6f1);
-  background-image: linear-gradient(to bottom, #3edbf0, #a6f6f1);
+  background-image: -webkit-linear-gradient(
+    top,
+    var(--mail-hover-gradient-front),
+    var(--mail-hover-gradient-back)
+  );
+  background-image: -moz-linear-gradient(
+    top,
+    var(--mail-hover-gradient-front),
+    var(--mail-hover-gradient-back)
+  );
+  background-image: -ms-linear-gradient(
+    top,
+    var(--mail-hover-gradient-front),
+    var(--mail-hover-gradient-back)
+  );
+  background-image: -o-linear-gradient(
+    top,
+    var(--mail-hover-gradient-front),
+    var(--mail-hover-gradient-back)
+  );
+  background-image: linear-gradient(
+    to bottom,
+    var(--mail-hover-gradient-front),
+    var(--mail-hover-gradient-back)
+  );
   text-decoration: underline;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   color: #40514e;
 }
