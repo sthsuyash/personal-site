@@ -1,5 +1,5 @@
 # Portfolio Site
-- [Personal Site](https://sthsuyash.github.io/personal-site/) made using nextJs 
+- [Personal Site](https://sthsuyash.netlify.app/) made using nextJs 
 
 
-[![Profile Site](/images/screenshot.jpg)](https://sthsuyash.github.io/personal-site/)
+[![Profile Site](public/images/screenshot.jpg)](https://sthsuyash.netlify.app/)
